@@ -312,6 +312,7 @@ impl<T: BeaconChainTypes> Router<T> {
             Response::LightClientBootstrap(_)
             | Response::LightClientOptimisticUpdate(_)
             | Response::LightClientFinalityUpdate(_)
+            | Response::Ping(_)
             | Response::LightClientUpdatesByRange(_) => unreachable!(),
         }
     }
